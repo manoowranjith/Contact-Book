@@ -1,0 +1,50 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+#contactContainer{
+    /* display:flex;
+    justify-content: center; */
+    display: block;
+    margin: 10vh auto;
+    padding:30px;
+    width: 70vh;
+    background-color: rgb(166, 167, 248);
+    border-radius: 20px;
+}
+.contactContainer-in{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+input{
+    /* height: 5vh; */
+    border: 2px solid black;
+    float: right;
+}
+#submit{
+    display: block;
+    margin:0 auto;
+    margin-top:50px;
+    padding:10px 20px;
+    background-color: aliceblue;
+    cursor:pointer
+}
+.myContacts{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 10px;
+    margin:5vh 20vw;
+}
+.card{
+    padding-top: 10px;
+    background-color: rgb(253, 233, 226);
+    border:1px solid black;
+}
+img{
+    display: block;
+    margin:0 auto;
+}
+.personal-details{
+    padding: 0px 10%;
+}

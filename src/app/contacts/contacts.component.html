@@ -1,0 +1,37 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+<div id="contactContainer">
+
+    <div class="contactContainer-in">
+        <div>
+            <label id="name">Name:</label>
+            <input type="text" [(ngModel)]="newContact.name">
+        </div>
+        <div>
+            <label id="email">Email:</label>
+            <input type="text" [(ngModel)]="newContact.email">
+        </div>
+        <div>
+            <label id="phone">Phone:</label>
+            <input type="text" [(ngModel)]="newContact.phoneNumber">
+        </div>
+        <div>
+            <label id="image">Image:</label>
+            <input type="text" [(ngModel)]="newContact.image">
+        </div>   
+    </div>
+    <button id="submit" (click)="addContact()">Submit New Contact</button> 
+</div>
+
+<div class="myContacts">
+    <div class="card" *ngFor="let details of contactDetails">
+        <img src={{details.image}} alt="">
+        <div class="personal-details">
+            <h2>Name : {{details.name}}</h2>
+            <h3>Email : {{details.email}}</h3>
+            <h3>Phoneno : {{details.phoneNumber}}</h3>
+        </div>
+    </div>
+</div>
